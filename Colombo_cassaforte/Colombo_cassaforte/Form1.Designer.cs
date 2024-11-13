@@ -42,6 +42,14 @@
             impostaUtente = new TextBox();
             label4 = new Label();
             inviaImpostaUtente = new Button();
+            label5 = new Label();
+            inviaChiudi = new Button();
+            label6 = new Label();
+            label7 = new Label();
+            impostaData = new TextBox();
+            inviaImpostaData = new Button();
+            inserisciData = new TextBox();
+            inviaInserisciData = new Button();
             SuspendLayout();
             // 
             // cassaforte
@@ -68,6 +76,7 @@
             // 
             stato.AutoSize = true;
             stato.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            stato.ForeColor = SystemColors.HotTrack;
             stato.Location = new Point(596, 163);
             stato.Name = "stato";
             stato.Size = new Size(72, 30);
@@ -76,7 +85,7 @@
             // 
             // InserisciUtente
             // 
-            InserisciUtente.Location = new Point(145, 157);
+            InserisciUtente.Location = new Point(82, 98);
             InserisciUtente.Name = "InserisciUtente";
             InserisciUtente.Size = new Size(178, 23);
             InserisciUtente.TabIndex = 3;
@@ -85,7 +94,7 @@
             // 
             codeUtente.AutoSize = true;
             codeUtente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            codeUtente.Location = new Point(114, 111);
+            codeUtente.Location = new Point(73, 58);
             codeUtente.Name = "codeUtente";
             codeUtente.Size = new Size(250, 25);
             codeUtente.TabIndex = 4;
@@ -95,7 +104,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(31, 241);
+            label2.Location = new Point(12, 345);
             label2.Name = "label2";
             label2.Size = new Size(407, 25);
             label2.TabIndex = 5;
@@ -103,7 +112,7 @@
             // 
             // inserisciSblocco
             // 
-            inserisciSblocco.Location = new Point(145, 285);
+            inserisciSblocco.Location = new Point(96, 391);
             inserisciSblocco.Name = "inserisciSblocco";
             inserisciSblocco.Size = new Size(178, 23);
             inserisciSblocco.TabIndex = 6;
@@ -111,7 +120,7 @@
             // inviaUtente
             // 
             inviaUtente.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            inviaUtente.Location = new Point(340, 140);
+            inviaUtente.Location = new Point(320, 80);
             inviaUtente.Name = "inviaUtente";
             inviaUtente.Size = new Size(65, 54);
             inviaUtente.TabIndex = 7;
@@ -122,7 +131,7 @@
             // inviaSblocco
             // 
             inviaSblocco.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            inviaSblocco.Location = new Point(340, 269);
+            inviaSblocco.Location = new Point(299, 373);
             inviaSblocco.Name = "inviaSblocco";
             inviaSblocco.Size = new Size(65, 54);
             inviaSblocco.TabIndex = 8;
@@ -144,6 +153,7 @@
             // 
             tentativi.AutoSize = true;
             tentativi.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            tentativi.ForeColor = Color.Red;
             tentativi.Location = new Point(617, 80);
             tentativi.Name = "tentativi";
             tentativi.Size = new Size(51, 20);
@@ -152,7 +162,7 @@
             // 
             // impostaUtente
             // 
-            impostaUtente.Location = new Point(464, 382);
+            impostaUtente.Location = new Point(536, 391);
             impostaUtente.Name = "impostaUtente";
             impostaUtente.Size = new Size(178, 23);
             impostaUtente.TabIndex = 11;
@@ -161,7 +171,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(425, 345);
+            label4.Location = new Point(522, 345);
             label4.Name = "label4";
             label4.Size = new Size(266, 25);
             label4.TabIndex = 12;
@@ -170,7 +180,7 @@
             // inviaImpostaUtente
             // 
             inviaImpostaUtente.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            inviaImpostaUtente.Location = new Point(648, 373);
+            inviaImpostaUtente.Location = new Point(723, 373);
             inviaImpostaUtente.Name = "inviaImpostaUtente";
             inviaImpostaUtente.Size = new Size(65, 54);
             inviaImpostaUtente.TabIndex = 13;
@@ -178,11 +188,94 @@
             inviaImpostaUtente.UseVisualStyleBackColor = true;
             inviaImpostaUtente.Click += inviaImpostaUtente_Click;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(49, 276);
+            label5.Name = "label5";
+            label5.Size = new Size(201, 25);
+            label5.TabIndex = 14;
+            label5.Text = "CHIUDI CASSAFORTE";
+            // 
+            // inviaChiudi
+            // 
+            inviaChiudi.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            inviaChiudi.Location = new Point(256, 263);
+            inviaChiudi.Name = "inviaChiudi";
+            inviaChiudi.Size = new Size(79, 54);
+            inviaChiudi.TabIndex = 16;
+            inviaChiudi.Text = "CHIUDI";
+            inviaChiudi.UseVisualStyleBackColor = true;
+            inviaChiudi.Click += inviaChiudi_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(82, 163);
+            label6.Name = "label6";
+            label6.Size = new Size(155, 25);
+            label6.TabIndex = 17;
+            label6.Text = "INSERISCI DATA";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(522, 263);
+            label7.Name = "label7";
+            label7.Size = new Size(238, 25);
+            label7.TabIndex = 18;
+            label7.Text = "IMPOSTA DATA( es. 13/9)";
+            // 
+            // impostaData
+            // 
+            impostaData.Location = new Point(536, 304);
+            impostaData.Name = "impostaData";
+            impostaData.Size = new Size(178, 23);
+            impostaData.TabIndex = 19;
+            // 
+            // inviaImpostaData
+            // 
+            inviaImpostaData.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            inviaImpostaData.Location = new Point(720, 288);
+            inviaImpostaData.Name = "inviaImpostaData";
+            inviaImpostaData.Size = new Size(65, 54);
+            inviaImpostaData.TabIndex = 20;
+            inviaImpostaData.Text = "INVIA";
+            inviaImpostaData.UseVisualStyleBackColor = true;
+            // 
+            // inserisciData
+            // 
+            inserisciData.Location = new Point(82, 191);
+            inserisciData.Name = "inserisciData";
+            inserisciData.Size = new Size(178, 23);
+            inserisciData.TabIndex = 21;
+            // 
+            // inviaInserisciData
+            // 
+            inviaInserisciData.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            inviaInserisciData.Location = new Point(320, 177);
+            inviaInserisciData.Name = "inviaInserisciData";
+            inviaInserisciData.Size = new Size(65, 54);
+            inviaInserisciData.TabIndex = 22;
+            inviaInserisciData.Text = "INVIA";
+            inviaInserisciData.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(inviaInserisciData);
+            Controls.Add(inserisciData);
+            Controls.Add(inviaImpostaData);
+            Controls.Add(impostaData);
+            Controls.Add(label7);
+            Controls.Add(label6);
+            Controls.Add(inviaChiudi);
+            Controls.Add(label5);
             Controls.Add(inviaImpostaUtente);
             Controls.Add(label4);
             Controls.Add(impostaUtente);
@@ -220,5 +313,13 @@
         private TextBox impostaUtente;
         private Label label4;
         private Button inviaImpostaUtente;
+        private Label label5;
+        private Button inviaChiudi;
+        private Label label6;
+        private Label label7;
+        private TextBox impostaData;
+        private Button inviaImpostaData;
+        private TextBox inserisciData;
+        private Button inviaInserisciData;
     }
 }

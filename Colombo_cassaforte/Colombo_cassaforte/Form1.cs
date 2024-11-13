@@ -9,13 +9,16 @@ namespace Colombo_cassaforte
             cassaforte1 = new Cassaforte("0000001", "Esperia", "X01", "A1209B735XF2");
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
-            stato.Text = Convert.ToString(cassaforte1.Stato);
-            tentativi.Text = Convert.ToString(cassaforte1.TentativiDiSblocco);
+            Stato();
+            TentativiSblocco();
+            label6.Visible = false;
+            inserisciData.Visible = false;
+            inviaInserisciData.Visible = false;
         }
 
-        private void Stato()
+        public void Stato()
         {
             if (cassaforte1.Stato)
                 stato.Text = "APERTA";
@@ -25,11 +28,13 @@ namespace Colombo_cassaforte
                 stato.Text = "BLOCCATA";
         }
 
-        private void TentativiSblocco()
+        public void TentativiSblocco()
         {
             tentativi.Text = Convert.ToString(cassaforte1.TentativiDiSblocco);
         }
-        private void inviaUtente_Click(object sender, EventArgs e)
+        //Metodo per inviare il codice utente senza richiesta data
+         
+          private void inviaUtente_Click(object sender, EventArgs e)
         {
             if (InserisciUtente.Text.Length != 5)
                 return;
@@ -42,8 +47,22 @@ namespace Colombo_cassaforte
 
         }
 
+        /*Metodo per inviare codice utente con successiva richiesta data NON FINITO
+        public void inviaUtente_Click(object sender, EventArgs e)
+        {
+            if (InserisciUtente.Text.Length != 5)
+                return;
+            if (cassaforte1.CodiceUtente != null)
+            {
+                
+                
+                label6.Visible = true;
+                inserisciData.Visible = true;
+                inviaInserisciData.Visible = true;
+            }
+        }*/
 
-        private void inviaSblocco_Click(object sender, EventArgs e)
+        public void inviaSblocco_Click(object sender, EventArgs e)
         {
             if (InserisciUtente.Text.Length != 12)
                 return;
@@ -55,15 +74,15 @@ namespace Colombo_cassaforte
             }
         }
 
-        private void inviaImpostaUtente_Click(object sender, EventArgs e)
+        public void inviaImpostaUtente_Click(object sender, EventArgs e)
         {
             bool controllo = false;
             if (impostaUtente.Text.Length != 5)
                 return;
-            for(int i = 0; i<impostaUtente.Text.Length; i++)
+            for (int i = 0; i < impostaUtente.Text.Length; i++)
             {
                 if (impostaUtente.Text[i] <= '0' && impostaUtente.Text[i] >= '9')
-                    controllo=true;
+                    controllo = true;
             }
             if (controllo == false)
             {
@@ -72,6 +91,27 @@ namespace Colombo_cassaforte
                 impostaUtente.Visible = false;
                 inviaImpostaUtente.Visible = false;
             }
+        }
+
+        public void inviaChiudi_Click(object sender, EventArgs e)
+        {
+            cassaforte1.ChiudiCassaforte();
+            Stato();
+        }
+
+        private void inviaImpostaData_Click(object sender, EventArgs e)
+        {
+            cassaforte1.ImpostaData(impostaData.Text);
+            label7.Visible = false;
+            impostaData.Visible = false;
+            inviaImpostaData.Visible = false;
+        }
+
+        private void inviaInserisciData_Click(object sender, EventArgs e)
+        {
+            cassaforte1.AperturaProgrammata(inserisciData.Text, InserisciUtente.Text);
+            Stato();
+            TentativiSblocco();
         }
     }
 }

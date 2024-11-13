@@ -51,7 +51,12 @@ namespace Colombo_cassaforte
             get { return tentativiDiSblocco; }
             set { tentativiDiSblocco = value; }
         }
-       
+        private string dataProgrammata;
+        public string DataProgrammata
+        {
+            get { return dataProgrammata; }
+            set { dataProgrammata = value;}
+        }
 
         public Cassaforte(string matricola, string produttore, string modello, string codiceSblocco) 
         {
@@ -101,5 +106,27 @@ namespace Colombo_cassaforte
             TentativiDiSblocco = 0;
             Stato = true;
         }
+
+        public void ImpostaData(string data)
+        {
+            if(data!=null)
+                DataProgrammata = data;
+        }
+
+        public void AperturaProgrammata(string data, string codice)
+        {
+            if (StatoDiBlocco == true)
+                return;
+            if (codice != codiceUtente || data != DataProgrammata)
+            {
+                TentativiDiSblocco++;
+                if (TentativiDiSblocco == 4)
+                    StatoDiBlocco = true;
+                return;
+            }
+            Stato = true;
+        }
     }
-}
+
+    }
+
