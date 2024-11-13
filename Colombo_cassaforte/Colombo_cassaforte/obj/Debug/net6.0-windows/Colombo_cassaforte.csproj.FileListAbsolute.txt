@@ -1,0 +1,16 @@
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\bin\Debug\net6.0-windows\Colombo_cassaforte.exe
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\bin\Debug\net6.0-windows\Colombo_cassaforte.deps.json
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\bin\Debug\net6.0-windows\Colombo_cassaforte.runtimeconfig.json
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\bin\Debug\net6.0-windows\Colombo_cassaforte.dll
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\bin\Debug\net6.0-windows\Colombo_cassaforte.pdb
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.Form1.resources
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.csproj.GenerateResource.cache
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.AssemblyInfoInputs.cache
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.AssemblyInfo.cs
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.csproj.CoreCompileInputs.cache
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.dll
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\refint\Colombo_cassaforte.dll
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.pdb
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\Colombo_cassaforte.genruntimeconfig.cache
+C:\Users\colombo.21191\Desktop\Colombo_cassaforte\Colombo_cassaforte\Colombo_cassaforte\obj\Debug\net6.0-windows\ref\Colombo_cassaforte.dll
